@@ -2,12 +2,7 @@ let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 var sidemenu=document.getElementById("sidemenu");
 
-function openmenu(){
-    sidemenu.style.right ="0";
-}
-function closemenu(){
-    sidemenu.style.right ="-200px";
-}
+
 menuIcon.onclick = () => {
     menuIcon.classList.toggle('bx-x');
     navbar.classList.toggle('simple');
@@ -15,7 +10,13 @@ menuIcon.onclick = () => {
 // scroll sections
 let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header nav a');
+function openmenu() {
+    sidemenu.style.right = "0";
+}
 
+function closemenu() {
+    sidemenu.style.right = "0";
+}
 window.onscroll = () => {
    
     sections.forEach(sec => {
